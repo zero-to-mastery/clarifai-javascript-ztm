@@ -88,7 +88,8 @@ class App {
 
   _init(options) {
     let apiEndpoint = options.apiEndpoint ||
-      (process && process.env && process.env.API_ENDPOINT) || 'https://api.clarifai.com';
+//       (process && process.env && process.env.API_ENDPOINT) || REMOVED FOR FRONT END TESTING ONLY - Andrei
+  'https://api.clarifai.com';
     this._config = {
       apiEndpoint,
       clientId: options.clientId,
